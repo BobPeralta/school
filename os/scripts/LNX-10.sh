@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Update machine
-sudo zypper upgrade -y;
+sudo zypper update -y;
 echo "MVR-LNX-10" > "/etc/hostname";
 
 #Disable firewall
