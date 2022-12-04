@@ -34,7 +34,8 @@ ZONE=''" > /etc/sysconfig/network/ifcfg-eth1;
 echo "Static route for eth1 set.";
 
 #Assigning a DNS
-echo -e "nameserver 10.11.13.12" > /etc/resolv.conf;
+echo -e "nameserver 10.11.13.12" > /tmp/resolv.conf;
+sudo mv /tmp/resolv.conf /etc/resolv.conf;
 echo "DNS set."
 
 #Enabling ip forwarding
